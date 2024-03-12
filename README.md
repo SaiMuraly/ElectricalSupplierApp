@@ -1,7 +1,7 @@
-<h1>Finance App</h1>
+<h1>Electrical Supplier App</h1>
 
 <h3>
-this project i creat an awesome  Finance App UI and backend
+Electrical Supplier App UI and backend
 </h3>
 <p>
 </p>
