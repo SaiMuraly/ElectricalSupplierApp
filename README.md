@@ -4,6 +4,8 @@
 Electrical Supplier App UI and backend
 </h3>
 <p>
+Demo Video :
+https://youtu.be/-J_RRzd8Ucs
 </p>
 <hr>
 <div style = ""> 
