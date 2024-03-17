@@ -44,7 +44,7 @@ class _StatisticsState extends State<Statistics> {
             children: [
               SizedBox(height: 20),
               Text(
-                'Bill Statistics',
+                'Statistics',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 20,
@@ -105,7 +105,7 @@ class _StatisticsState extends State<Statistics> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Payment History',
+                      'Top Spending',
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 16,
@@ -138,7 +138,7 @@ class _StatisticsState extends State<Statistics> {
                     ),
                   ),
                   subtitle: Text(
-                    ' ${a[index].datetime.day}-${a[index].datetime.month}-${a[index].datetime.year}',
+                    ' ${a[index].datetime.year}-${a[index].datetime.day}-${a[index].datetime.month}',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                     ),
@@ -148,7 +148,7 @@ class _StatisticsState extends State<Statistics> {
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 19,
-                      color: a[index].IN == 'Add[DEV]' ? Colors.red : Colors.green,
+                      color: a[index].IN == 'Income' ? Colors.green : Colors.red,
                     ),
                   ),
                 );

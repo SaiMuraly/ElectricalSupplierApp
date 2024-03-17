@@ -50,22 +50,13 @@ class _ChartState extends State<Chart> {
             color: Color.fromARGB(255, 47, 125, 121),
             width: 3,
             dataSource: <SalesData>[
-              ...List.generate(time(a!, b ? true : false).length, (index) {
-                return SalesData(
-                    j
-                        ? b
-                            ? a![index].datetime.hour.toString()
-                            : a![index].datetime.day.toString()
-                        : a![index].datetime.month.toString(),
-                    b
-                        ? index > 0
-                            ? time(a!, true)[index] + time(a!, true)[index - 1]
-                            : time(a!, true)[index]
-                        : index > 0
-                            ? time(a!, false)[index] +
-                                time(a!, false)[index - 1]
-                            : time(a!, false)[index]);
-              })
+              SalesData('Mon', 100),
+              SalesData('Tue', 20),
+              SalesData('Wed', 40),
+              SalesData('Thur', 15),
+              SalesData('Fri', 5),
+              SalesData('Sat', 30),
+              SalesData('Sun', 60)
             ],
             xValueMapper: (SalesData sales, _) => sales.year,
             yValueMapper: (SalesData sales, _) => sales.sales,
